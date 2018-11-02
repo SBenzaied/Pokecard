@@ -2,13 +2,15 @@
 /**
  * Created by PhpStorm.
  * User: romi
- * Date: 01/11/2018
- * Time: 17:51
+ * Date: 02/11/2018
+ * Time: 14:26
  */
+//TODO update un seul champ
+//TODO message d'erreur si l'id n'existe pas.
 
 header('Access-Control-Allow-Origin: *');
 header('Content-Type: application/json');
-header('Access-Control-Allow-Methods: POST');
+header('Access-Control-Allow-Methods: PUT');
 header('Access-Control-Allow-Headers: Access-Control-Allow-Headers,Content-Type,Access-Control-Allow-Methods, Authorization, X-Requested-with');
 
 
@@ -26,18 +28,15 @@ $pokemon = new Pokemon($db);
 $data = json_decode(file_get_contents("php://input"));
 
 $pokemon->setId($data->id);
-$pokemon->setNom($data->nom);
-$pokemon->setType1($data->type_1);
-$pokemon->setType2($data->type_2);
-$pokemon->setImage($data->image);
 
-//Create pokemon
-if($pokemon->create()){
+
+//Update pokemon
+if($pokemon->update()){
     echo json_encode(
-        array('message' => 'Pokemon created')
+        array('message' => 'Pokemon updated')
     );
 } else {
     echo json_encode(
-        array('message' => 'Pokemon not created')
+        array('message' => 'Pokemon not updated')
     );
 }

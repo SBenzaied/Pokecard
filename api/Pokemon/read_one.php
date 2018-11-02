@@ -20,16 +20,16 @@ $db = $database->connect();
 $pokemon = new Pokemon($db);
 
 //get ID
-$pokemon->id = isset($_GET['id']) ? $_GET['id'] : die();
+$pokemon->setId( isset($_GET['id']) ? $_GET['id'] : die());
 
 $pokemon->read_one();
 
 $pokemon_arr = array(
-    'id' => $pokemon->id,
-    'nom' => $pokemon->nom,
-    'type_1' => $pokemon->type1,
-    'type_2' => $pokemon->type2,
-    'image' => $pokemon->image
+    'id' => $pokemon->getId(),
+    'nom' => $pokemon->getNom(),
+    'type_1' => $pokemon->getType1(),
+    'type_2' => $pokemon->getType2(),
+    'image' => $pokemon->getImage()
     );
 if($pokemon_arr['id']!== null){
     //convert to json
