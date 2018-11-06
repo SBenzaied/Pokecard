@@ -11,11 +11,11 @@ class Pokemon {
     private $conn;
     private $table = 'pokemon';
 
-    private $id;
+    private $id_pokemon;
     private $nom;
-    private $type1;
-    private $type2;
-    private $image;
+    private $id_type1;
+    private $id_type2;
+    private $id_image;
 
 
 
@@ -28,7 +28,11 @@ class Pokemon {
     //Get all pokemon
     public function read() {
         //create query
-        $query = 'SELECT * FROM ' .$this->table;
+        $query = 'Select DISTINCT P.id_pokemon ,P.nom, T.libelle as type1,T2.libelle as type2,U.libelle as lien_image 
+                  from pokemon P, url U, type T,image I,type T2 
+                  where P.id_image= I.id_image 
+                  and I.id_url=U.id_url 
+                  AND (P.id_type1=T.id_type and P.id_type2=T2.id_type)';
 
         //prepare statement
         $stmt = $this->conn->prepare($query);
