@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e650468a-e624-4e3f-88c2-77f101678a14" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/api/Pokemon/import.php" afterDir="false" />
@@ -21,6 +22,13 @@
       <change beforePath="$PROJECT_DIR$/api/Pokemon/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/Pokemon/update.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/Database.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/Pokemon.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/Pokemon.php" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/Const.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/import.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+>>>>>>> master
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -128,6 +136,7 @@
     <session id="-63308632">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -135,25 +144,41 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="md" value="1" />
+<<<<<<< HEAD
           <entry key="php" value="2" />
+=======
+          <entry key="php" value="3" />
+>>>>>>> master
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Markdown" value="1" />
+<<<<<<< HEAD
           <entry key="PHP" value="2" />
+=======
+          <entry key="PHP" value="3" />
+>>>>>>> master
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="md" value="182" />
+<<<<<<< HEAD
           <entry key="php" value="126" />
+=======
+          <entry key="php" value="128" />
+>>>>>>> master
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="182" />
+<<<<<<< HEAD
           <entry key="PHP" value="113" />
+=======
+          <entry key="PHP" value="115" />
+>>>>>>> master
           <entry key="SQL" value="13" />
         </counts>
       </usages-collector>
@@ -200,6 +225,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/Pokemon/import.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -214,15 +240,39 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="278">
               <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+=======
+      <file pinned="false" current-in-tab="false">
+        <entry file="file:///Applications/XAMPP/xamppfiles/htdocs/Pokecard/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+>>>>>>> master
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/Pokemon.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="749">
               <caret line="147" selection-start-line="147" selection-end-line="147" />
+=======
+      <file pinned="false" current-in-tab="true">
+        <entry file="file:///Applications/XAMPP/xamppfiles/htdocs/Pokecard/api/import.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Const.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+>>>>>>> master
             </state>
           </provider>
         </entry>
@@ -240,6 +290,7 @@
         <option value="$PROJECT_DIR$/Pokecard/models/Pokemon.php" />
         <option value="$PROJECT_DIR$/Pokecard/api/Pokemon/update.php" />
         <option value="$PROJECT_DIR$/api/Pokemon/delete.php" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/api/index.php" />
         <option value="$PROJECT_DIR$/config/._Database.php" />
@@ -254,6 +305,17 @@
         <option value="$PROJECT_DIR$/models/Url.php" />
         <option value="$PROJECT_DIR$/models/Type.php" />
         <option value="$PROJECT_DIR$/api/Pokemon/import.php" />
+=======
+        <option value="$PROJECT_DIR$/api/Pokemon/update.php" />
+        <option value="$PROJECT_DIR$/api/Pokemon/read_one.php" />
+        <option value="$PROJECT_DIR$/models/Pokemon.php" />
+        <option value="$PROJECT_DIR$/api/Pokemon/read.php" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/api/import.php" />
+        <option value="$PROJECT_DIR$/api/index.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/Const.php" />
+>>>>>>> master
       </list>
     </option>
   </component>
@@ -326,7 +388,10 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+<<<<<<< HEAD
       <recent name="$PROJECT_DIR$/api/Pokemon" />
+=======
+>>>>>>> master
       <recent name="$PROJECT_DIR$" />
       <recent name="C:\xampp\htdocs\Pokecard" />
       <recent name="C:\xampp\htdocs\Pokecard\api" />
@@ -369,16 +434,20 @@
       <workItem from="1541081642158" duration="10735000" />
       <workItem from="1541164874635" duration="5256000" />
       <workItem from="1541496381086" duration="4105000" />
+<<<<<<< HEAD
       <workItem from="1541527798143" duration="9232000" />
       <workItem from="1541545485701" duration="2513000" />
       <workItem from="1541585935345" duration="2897000" />
       <workItem from="1541594407253" duration="8356000" />
       <workItem from="1541661952836" duration="12037000" />
       <workItem from="1541751771117" duration="8642000" />
+=======
+>>>>>>> master
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="63781000" />
   </component>
   <component name="TodoView">
@@ -389,6 +458,9 @@
       <are-packages-shown value="true" />
       <is-autoscroll-to-source value="true" />
     </todo-panel>
+=======
+    <option name="totallyTimeSpent" value="20900000" />
+>>>>>>> master
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2048" height="1065" extended-state="6" />
@@ -462,16 +534,40 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+=======
+    <entry file="file://$PROJECT_DIR$/api/Pokemon/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/Pokemon/update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+>>>>>>> master
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/Database.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/models/Pokemon.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="548">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> master
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -484,6 +580,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/Pokemon/create.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="300">
           <caret line="25" column="51" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="51" />
         </state>
@@ -493,11 +590,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+=======
+        <state relative-caret-position="105">
+          <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/Pokemon/update.php">
+    <entry file="file://$PROJECT_DIR$/api/import.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="47" column="11" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="11" />
+>>>>>>> master
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state>
           <caret column="5" selection-start-column="5" selection-end-column="5" />
         </state>
@@ -507,11 +616,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="18" column="28" lean-forward="true" selection-start-line="14" selection-end-line="18" selection-end-column="28" />
+=======
+        <state relative-caret-position="180">
+          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/Pokemon.php">
+    <entry file="file://$PROJECT_DIR$/Const.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+>>>>>>> master
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/XAMPP/xamppfiles/htdocs/Pokecard/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="749">
           <caret line="147" selection-start-line="147" selection-end-line="147" />
         </state>
@@ -528,6 +649,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
           <caret line="74" column="2" selection-start-line="74" selection-start-column="2" selection-end-line="74" selection-end-column="2" />
+=======
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/XAMPP/xamppfiles/htdocs/Pokecard/api/import.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+>>>>>>> master
         </state>
       </provider>
     </entry>

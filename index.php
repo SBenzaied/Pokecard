@@ -5,6 +5,7 @@
  * Date: 06/11/2018
  * Time: 13:24
  */
+<<<<<<< HEAD
 
 
 
@@ -18,5 +19,13 @@ include_once 'api/Pokemon/import.php';
 //getTypeApi();
 //getImageApi();
 
+=======
+include_once 'api/import.php';
+
+
+
+
+getDataApi();
+>>>>>>> master
 
 
