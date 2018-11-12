@@ -8,9 +8,8 @@
 
 class Pokemon {
 
-    private $conn;
-    private $table = 'pokemon';
 
+    private $conn;
     private $id_pokemon;
     private $nom;
     private $id_type1;
@@ -28,7 +27,7 @@ class Pokemon {
     //Get all pokemon
     public function read() {
         //create query
-        $query = 'Select DISTINCT P.id_pokemon ,P.nom, T.libelle as type1,T2.libelle as type2,U.libelle as lien_image 
+        $query = 'Select DISTINCT P.id_pokemon ,P.nom, T.libelle as type_1,T2.libelle as type_2,U.libelle as lien_image 
                   from pokemon P, url U, type T,image I,type T2 
                   where P.id_image= I.id_image 
                   and I.id_url=U.id_url 
@@ -46,13 +45,17 @@ class Pokemon {
     //Get 1 pokemon
     public function read_one() {
         //create query
-        $query = 'SELECT * FROM ' .$this->table . ' WHERE id = ? LIMIT 0,1';
+        $query = 'Select DISTINCT P.id_pokemon ,P.nom, T.libelle as type_1,T2.libelle as type_2,U.libelle as lien_image 
+                  from pokemon P, url U, type T,image I,type T2 
+                  where P.id_image= I.id_image 
+                  and I.id_url=U.id_url 
+                  AND (P.id_type1=T.id_type and P.id_type2=T2.id_type) and id_pokemon = ? LIMIT 0,1';
 
         //prepare statement
         $stmt = $this->conn->prepare($query);
 
         //BIND id
-        $stmt->bindParam(1, $this->id);
+        $stmt->bindParam(1, $this->id_pokemon);
 
         //execute query
         $stmt->execute();
@@ -61,11 +64,11 @@ class Pokemon {
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
         //set properties
-        $this->setId($row['id']);
+        $this->setId($row['id_pokemon']);
         $this->setNom($row['nom']);
         $this->setType1($row['type_1']);
         $this->setType2($row['type_2']);
-        $this->setImage($row['image']);
+        $this->setImage($row['lien_image']);
 
 
         return $stmt;
@@ -74,16 +77,16 @@ class Pokemon {
     //create pokemon
     public function create() {
         //create query
-        $query = 'INSERT INTO ' .$this->table . ' (id,nom,type_1,type_2,image) VALUES (:id,:nom,:type_1,:type_2,:image)';
+        $query = 'INSERT INTO  pokemon (id_pokemon,nom,id_type1,id_type2,id_image) VALUES (:id,:nom,:type_1,:type_2,:image)';
         //prepare statement
         $stmt = $this->conn->prepare($query);
 
         //BIND data
-        $stmt->bindParam(':id', $this->id);
+        $stmt->bindParam(':id', $this->id_pokemon);
         $stmt->bindParam(':nom', $this->nom);
-        $stmt->bindParam(':type_1', $this->type1);
-        $stmt->bindParam(':type_2', $this->type2);
-        $stmt->bindParam(':image', $this->image);
+        $stmt->bindParam(':type_1', $this->id_type1);
+        $stmt->bindParam(':type_2', $this->id_type2);
+        $stmt->bindParam(':image', $this->id_image);
 
         //execute query
         if($stmt->execute()){
@@ -98,20 +101,22 @@ class Pokemon {
     //Update pokemon
     public function update() {
         //create query
-        $query = 'UPDATE ' .$this->table . ' SET nom = :nom,type_1 = :type_1,type_2 = :type_2,image = :image 
-        WHERE id = :id';
+        $query = "UPDATE pokemon SET nom = :nom, id_type1 = :id_type1, id_type2 = :id_type2,id_image = :id_image where id_pokemon = :id_pokemon";
         //prepare statement
         $stmt = $this->conn->prepare($query);
 
         //BIND data
-        $stmt->bindParam(':id', $this->id);
+        $stmt->bindParam(':id_pokemon', $this->id_pokemon);
         $stmt->bindParam(':nom', $this->nom);
-        $stmt->bindParam(':type_1', $this->type1);
-        $stmt->bindParam(':type_2', $this->type2);
-        $stmt->bindParam(':image', $this->image);
+        $stmt->bindParam(':id_type1', $this->id_type1);
+        $stmt->bindParam(':id_type2', $this->id_type2);
+        $stmt->bindParam(':id_image', $this->id_image);
+
 
         //execute query
         if($stmt->execute()){
+            echo $this->nom . " " . $this->id_type1 . " " . $this->id_type2 . " ". $this->id_image ;
+
             return true;
         }
 
@@ -140,20 +145,21 @@ class Pokemon {
         return false;
     }
 
+
     /**
      * @return mixed
      */
     public function getId()
     {
-        return $this->id;
+        return $this->id_pokemon;
     }
 
     /**
-     * @param mixed $id
+     * @param mixed $id_pokemon
      */
-    public function setId($id)
+    public function setId($id_pokemon)
     {
-        $this->id = $id;
+        $this->id_pokemon = $id_pokemon;
     }
 
     /**
@@ -177,7 +183,7 @@ class Pokemon {
      */
     public function getType1()
     {
-        return $this->type1;
+        return $this->id_type1;
     }
 
     /**
@@ -185,7 +191,7 @@ class Pokemon {
      */
     public function setType1($type1)
     {
-        $this->type1 = $type1;
+        $this->id_type1 = $type1;
     }
 
     /**
@@ -193,7 +199,7 @@ class Pokemon {
      */
     public function getType2()
     {
-        return $this->type2;
+        return $this->id_type2;
     }
 
     /**
@@ -201,7 +207,7 @@ class Pokemon {
      */
     public function setType2($type2)
     {
-        $this->type2 = $type2;
+        $this->id_type2 = $type2;
     }
 
     /**
@@ -209,7 +215,7 @@ class Pokemon {
      */
     public function getImage()
     {
-        return $this->image;
+        return $this->id_image;
     }
 
     /**
@@ -217,7 +223,7 @@ class Pokemon {
      */
     public function setImage($image)
     {
-        $this->image = $image;
+        $this->id_image = $image;
     }
 
 

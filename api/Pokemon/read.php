@@ -35,9 +35,9 @@ if($num > 0) {
         $pokemon_item = array(
             'id' => $id_pokemon,
             'nom' => $nom,
-            'type_1' =>$id_type1,
-            'type_2' => $id_type2,
-            'image' => $id_image,
+            'type_1' =>$type_1,
+            'type_2' => $type_2,
+            'image' => $lien_image,
 
         );
         array_push($pokemon_arr['data'],$pokemon_item);

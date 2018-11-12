@@ -25,11 +25,14 @@ $pokemon = new Pokemon($db);
 //get raw posted data
 $data = json_decode(file_get_contents("php://input"));
 
-$pokemon->setId($data->id);
+$pokemon->setId($data->id_pokemon);
 $pokemon->setNom($data->nom);
-$pokemon->setType1($data->type_1);
-$pokemon->setType2($data->type_2);
-$pokemon->setImage($data->image);
+$pokemon->setType1($data->id_type1);
+if(isset($data->id_type2)){
+    $pokemon->setType2($data->id_type2);
+}
+
+$pokemon->setImage($data->id_image);
 
 //Create pokemon
 if($pokemon->create()){
