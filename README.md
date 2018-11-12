@@ -4,6 +4,7 @@ id type pokemon
 
 
 1:acier
+2:combat
 3:dragon
 4:eau
 5:electrique
@@ -17,4 +18,5 @@ id type pokemon
 13:roche
 14:sol
 15:spectre
+16:ténèbres
 17:vol

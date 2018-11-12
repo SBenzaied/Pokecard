@@ -27,7 +27,7 @@ $pokemon = new Pokemon($db);
 //get raw posted data
 $data = json_decode(file_get_contents("php://input"));
 
-$pokemon->setId($data->id);
+$pokemon->setId($data->id_pokemon);
 
 
 //Update pokemon

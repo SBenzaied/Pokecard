@@ -20,18 +20,18 @@ $db = $database->connect();
 $pokemon = new Pokemon($db);
 
 //get ID
-$pokemon->setId( isset($_GET['id']) ? $_GET['id'] : die());
+$pokemon->setId( isset($_GET['id_pokemon']) ? $_GET['id_pokemon'] : die());
 
 $pokemon->read_one();
 
 $pokemon_arr = array(
-    'id' => $pokemon->getId(),
+    'id_pokemon' => $pokemon->getId(),
     'nom' => $pokemon->getNom(),
     'type_1' => $pokemon->getType1(),
     'type_2' => $pokemon->getType2(),
-    'image' => $pokemon->getImage()
+    'lien_image' => $pokemon->getImage()
     );
-if($pokemon_arr['id']!== null){
+if($pokemon_arr['id_pokemon']!== null){
     //convert to json
     echo(json_encode($pokemon_arr));
 } else {
